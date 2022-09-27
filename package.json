@@ -1,0 +1,33 @@
+{
+  "name": "wynk-desktop-app",
+  "version": "0.0.1",
+  "description": "Wynk desktop application by yash khatri",
+  "main": "public/electron.js",
+  "build": {
+    "appId": "yash.khatri.wynk",
+    "mac": {
+      "icon": "public/favicon.jpg",
+      "category": "yash.khatri.wynk"
+    },
+    "win": {
+      "icon": "public/favicon.jpg"
+    }
+    },
+    "dependencies": {
+      "electron-is-dev": "^1.1.0"
+    },
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "build": "electron-builder build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "electron-installer-windows --src YashKhatriWYNK/ --dest YashKhatriWYNK/Wynk"
+  },
+  "devDependencies": {
+    "electron": "^6.0.3",
+    "electron-builder": "^21.2.0"
+  },
+  "author": "yashkhatri",
+  "license": "ISC"
+}
